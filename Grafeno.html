@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<title>Evans, Lam, Saldaña</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+<style type="text/css">body, a, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), progress;}</style>
+<audio controls autoplay>
+  <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
+Your browser does not support the audio element.
+</audio>
+
+<!-- Menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Yadira Evans<br>Nathalie Lam<br>Ángel Saldaña</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#¿Qué es?" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">¿Qué es?</a> 
+    <a href="#¿Cuándo se descubrió?" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">¿Cuándo se descubrió?</a> 
+     <a href="#¿Cómo se obtiene el grafeno?" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">¿Cómo se obtiene el grafeno?
+</a> 
+  <a href="#Propiedades" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Propiedades  
+</a> 
+  <a href="#Aplicaciones" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Aplicaciones  
+</a>
+<a href="#Ventajas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ventajas</a> 
+<a href="#Desventajas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Desventajas </a> 
+<a href="#Xiaomi  y el grafeno" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Xiaomi  y el grafeno </a> 
+
+  </div>
+</nav>
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<iframe src="https://free.timeanddate.com/clock/i7rlfzgu/n192/tlpa4/fcf44336/tt1/tw0" frameborder="0" width="165" height="18"></iframe><iframe src="https://free.timeanddate.com/clock/i7rlfzgu/n192/tlpa4/fcf44336" frameborder="0" width="57" height="18"></iframe>
+
+
+
+
+  <!-- Grafeno -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Grafeno</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo  -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/09/que-ha-quedado-grafeno-2018_15.jpg?itok=wyEcOmtU" style="width:100%" onclick="onClick(this)" alt="Chaleco antibalas con dos átomos de espesor">
+      <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2018/09/que-ha-quedado-grafeno-2018_14.jpg?itok=O7Lcpy4T" style="width:100%" onclick="onClick(this)" alt="Espuma de grafeno que soporta 3000 veces su peso">
+      <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2018/09/que-ha-quedado-grafeno-2018_7.jpg?itok=2DahXMUL" style="width:100%" onclick="onClick(this)" alt="Bombillas de grafeno">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2018/09/que-ha-quedado-grafeno-2018_2.jpg?itok=vx7cOBhQ" style="width:100%" onclick="onClick(this)" alt="Auriculares con grafeno">
+      <img src="http://www.teknlife.com/wp-content/uploads/2014/02/graphen-chip-1200.jpg" style="width:100%" onclick="onClick(this)" alt="Chip de grafeno">
+      <img src="https://pantallasparamoviles.es/blog/wp-content/uploads/sssssss.jpg" style="width:100%" onclick="onClick(this)" alt="Batería de grafeno">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+
+
+  <!-- ¿Qué es? -->
+  <div class="w3-container" id="¿Qué es?" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>¿Qué es?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Es un nanomaterial (un material con dimensiones inferiores a una millonésima de milímetro) que está compuesto por una agrupación de átomos de carbono que están colocados con una configuración hexagonal. Similar a la que tendría un panal de abejas.
+
+Es una capa de carbono que tiene sólo un átomo de espesor y se trata de un material con un grosor muy pequeño, considerado como bidimensional. Es decir, que ocupa sólo dos dimensiones en el espacio. En cada milímetro de grafito, como el que usas habitualmente en lápices escolares, hay tres millones de capas de grafeno. Tres millones de capas de un material con grandes propiedades y características que hacen que sea muy útil y con muchas aplicaciones en el día a día: es superconductor, es duro, es ligero, es resistente.
+    </p>
+  </div>
+  
+  <!-- ¿Cuándo se descubrió? -->
+  <div class="w3-container" id="¿Cuándo se descubrió?" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>¿Cuándo se descubrió?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Ya en 1930 se habla del grafeno, no es una nueva moda. Se sabe que existe desde dicha década pero se abandonó como material ya que se consideraba demasiado inestable para trabajar en determinados campos. En 1986 empezó a considerarse como grafeno a las láminas de carbono del grafito. Fue muchas décadas después cuando Kostantin Novoselov y Andre Geim consiguieron aislado a temperatura ambiente, hecho que les valió el Premio Nobel de Física en 2010 y que a día de hoy nos permite múltiples aplicaciones o empresas especializadas en grafeno, en sus usos y en su distribución.
+    </p>
+      <!-- ¿Cómo se obtiene el grafeno? -->
+  <div class="w3-container" id="¿Cómo se obtiene el grafeno?" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>¿Cómo se obtiene el grafeno?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>El grafeno es un mineral que necesita para conservar todas sus propiedades, ha de ser de la mayor calidad posible, porque cuanto peor sea menos aprovechable será.</p><p>Con el método tradicional de deshojar el grafito con cinta adhesiva, se obtiene el grafeno de mejor calidad, pero el proceso es lento y la productividad mínima, por lo que resulta insuficiente para la demanda que hay hoy en día.
+    </p>
+    
+    <body style="background-color: white">
+<b><u style="color: white"><marquee><i><center><h4 style="background-color:  #f44336; color: white">En la actualidad tenemos grafeno de dos formas:</h4></center></i></marquee></u></b>
+    
+     
+      <p>Grafeno en lámina: que es el de alta calidad, muy empleado en electrónica e informática, puesto que en estos dos sectores se requiere de un material altamente resistente.<br><br>
+Grafeno en polvo: es de mucha menos calidad, el proceso de obtención es mucho más barato y hay mucha más producción.
+    </p>
+    </div>
+      <!-- Propiedades -->
+  <div class="w3-container" id="Propiedades" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Propiedades</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Alta conductividad térmica: Ayuda a conducir el calor entre materiales y optimizar la transferencia de energía.<br><br>Alta conductividad eléctrica: Sirve también para poder establecer circuitos eléctricos dado que conduce muy bien la electricidad.
+Mayor cantidad de elasticidad y flexibilidad: Al tener estas propiedades es un material bastante moldeable y adaptable a diferentes situaciones.
+Alta dureza: Esta capacidad le confiere gran resistencia.
+Alta resistencia: Es aproximadamente unas 200 a veces más resistente que el acero. Tiene una resistencia similar al del diamante, pero con un peso mucho más ligero.
+    </p>
+    
+  <!-- Aplicaciones -->
+  <div class="w3-container" id="Aplicaciones" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Aplicaciones</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    
+
+  <!-- Tipos de aplicaciones -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://e00-elmundo.uecdn.es/elmundo/imagenes/2011/08/31/nanotecnologia/1314717747_0.jpg" alt="Cables de alta velocidad" style="width:100%">
+        <div class="w3-container">
+          <h3>Cables de alta velocidad</h3>
+          <p>Investigadores de la Universidad de Cambridge lograron que el grafeno fuera capaz de captar una gran cantidad de luz, lo que se puede utilizar en la creación de cables de fibra óptica muy veloces que se benefician de otra de las propiedades del material: los electrones se desplazan rápidamente en él.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://diariodeunmoviladicto.com/wp-content/uploads/2019/08/Bateria-de-Grafeno.jpg" alt="Superbaterías eléctricas" style="width:100%">
+        <div class="w3-container">
+          <h3>Superbaterías eléctricas</h3>
+          <p>Uno de los descubrimientos más emocionantes es el relacionado al campo de los acumuladores eléctricos,la tecnología permite dispositivos que funcionan durante pocas horas hasta requerir de una carga eléctrica que puede durar otras varias horas, degradando la experiencia de uso en teléfonos móviles, tabletas y etc.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://integralatampost.s3.amazonaws.com/uploads/article/picture/14297/20190212_Pantallas-flexibles-_en-qu%C3%A9-consiste-y-cu%C3%A1l-es-la-ventaja.jpg" style="width:100%">
+        <div class="w3-container">
+          <h3>Pantallas táctiles flexibles</h3>
+          <p>Conduce electrones de buena forma casi sin calentarse en el proceso, investigadores de la Universidad de Texas y la Universidad de Corea del Sur descubrieron que una lámina de grafeno puede usarse en el desarrollo de pantallas táctiles, aprovechando el hecho de que una lámina de grafeno puede ser totalmente transparente, ideal para colocar por sobre un panel de píxeles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ventajas -->
+  <div class="w3-container" id="Ventajas" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Ventajas</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Con sus grandes propiedades y múltiples podemos realizar casi todo tipo de aplicaciones de forma más eficiente.
+Dado que su dureza es alta tenemos una mayor duración que la del acero a pesar de tener una consistencia elástica y flexible.
+Al poder conducir la electricidad y la temperatura se deriva en numerosos usos.
+Una batería de grafeno es capaz de cargar la batería de un teléfono móvil en tan sólo 5 minutos.
+Puede servir como medicina contra el cáncer.</p>
+  </div>
+  
+    <!-- Desventajas  -->
+  <div class="w3-container" id="Desventajas" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Desventajas </b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Aunque los investigadores intentan descubrir cuáles son todos los usos potenciales de grafeno, no todo se aprovechan al máximo la práctica. Esta es una de las razones por la que aún no hay aplicaciones comerciales para este tipo de material. Es tan sólo un tipo de inconveniente temporal.
+Aplicaciones comerciales: Este punto se deriva del anterior. Aunque existan más de 60.000 artículos científicos que estudian este material, no existen productos comerciales que estén fabricados con grafeno.</p>
+  </div>
+  
+      <!-- Xiami y el grafeno  -->
+  <div class="w3-container" id="Xiaomi  y el grafeno" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Xiaomi  y el grafeno </b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Xiaomi ha incluido por primera vez baterías de grafeno en sus móviles con el Xiaomi Mi 10 Ultra. Este terminal cuenta con una batería de 4.500 mAh y una potencia de carga de 120 W, pudiendo llenarla por completo en sólo 23 minutos. Además, tras 800 ciclos de carga y descarga, la capacidad de la batería se mantiene en más de un 90%. Eso implica que, incluso tras algo más de dos años de uso, la batería seguirá casi como nueva.<br><br>
+
+Xiaomi estuvo un tiempo probando distintas formas de implementar el grafeno, pero finalmente optaron por una estructura laminar bidimensional que hace un contacto superficial con el material activo para forma el electrodo completo. Los electrones de grafeno están altamente deslocalizados dentro de la batería, formando una mejor estructura con una mayor conductividad.<br><br>
+
+<center><a href="https://www.adslzone.net/noticias/productos/xiaomi-baterias-grafeno-futuro-2020/"><img src="https://www.xiaomi4mi.com/wp-content/uploads/2020/08/Xiaomi-Mi-10-Ultra-e1597152650923.jpg"></a></center>
+
+
+Con el grafito actual, la superficie de contacto es menor, y es necesario un mayor también superficie para transmitir electrones. El grafeno, a su vez, también conduce mejor el calor, y ayuda a evitar la degradación de la batería gracias a disiparlo mejor.<br><br>
+
+No obstante, la fabricación y el almacenamiento del grafeno siguen ofreciendo grandes dificultades. De cara al futuro, Xiaomi afirma estar preparando nuevas y mejores baterías que mejoren aún más la capacidad y la duración, haciendo no sólo que las baterías de los móviles sean mejores, sino que también se pueda mejorar la batería de un portátil u otros dispositivos de nuestro día a día, donde podemos llegar a encontrar ya incluso discos duros externos con baterías..</p>
+  </div>
+  
+  <body style="background-color: white">
+<b><u style="color: white"><marquee><i><center><h4 style="background-color:  #f44336; color: white">Links para investigar más</h4></center></i></marquee></u></b>
+<a href="https://www.adslzone.net/reportajes/tecnologia/que-es-grafeno/">Grafeno</a> <br><br>
+<a href="https://grafenotecnologiaflexible.wordpress.com/">Aplicaciones</a> <br><br>
+    
+  
+<a target="_top" href="https://flamingtext.com/" ><img src="https://blog.flamingtext.com/blog/2021/04/16/flamingtext_com_1618612673_883608234.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/uDr7VFZNyfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br><br>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7eOmOQJS89gp3xq-3i3aY7K_qLSZ-_rTcQT0QAFFOhoHE_A/viewform?embedded=true" width="640" height="462" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
+
+<p><b>Contador de visitas<b></p>
+<div id="sfcyms9yn9lnrn6949bjw1lja7we816bwt7"></div>
+<script type="text/javascript" src="https://counter11.stat.ovh/private/counter.js?c=yms9yn9lnrn6949bjw1lja7we816bwt7&down=async" async></script>
+<noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas com"><img src="https://counter11.stat.ovh/private/contadorvisitasgratis.php?c=yms9yn9lnrn6949bjw1lja7we816bwt7" border="0" title="contador de visitas com" alt="contador de visitas com"></a></noscript>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
